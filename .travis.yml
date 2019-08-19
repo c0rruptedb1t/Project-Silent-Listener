@@ -7,6 +7,6 @@
     "pip install pycryptodome"
   ],
   "script": [
-    "python3 clientV4.py"
+    "python3 serverV4.5.py"
   ]
 }
