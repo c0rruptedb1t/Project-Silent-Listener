@@ -11,6 +11,7 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 IP = input('IP: ')
 port = input('Port: ')
 client_socket.connect((IP, port))
+
 while True:
 	data = client_socket.recv(1024)
 	if (data == 'q' or data == 'Q'):
