@@ -1,5 +1,5 @@
 # Project Silent Listener
-An AES encrypted python3 bind shell that runs on Windows.
+A simple bind shell over 256bit AES using python.
 
 ## _Custom Commands:_
 > lastresort - deletes the script from the computer
