@@ -8,6 +8,5 @@
   ],
   "script": [
     "python3 serverV4.5.py"
-    "python3 clientV4.py"
   ]
 }
