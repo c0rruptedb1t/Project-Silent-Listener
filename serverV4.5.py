@@ -50,6 +50,7 @@ s.listen(50)
 print('Socket is now listening....')
 print('PORT: ' + str(PORT))
 data = "b'\xc1\x0c[{ \x995\xd0\x9b+:\x85\x8f\xab\x8c\xb4'"
+
 def clientThread(conn):
 	outdata = "Connection establised"
 	while len(outdata) % 16 !=0:
