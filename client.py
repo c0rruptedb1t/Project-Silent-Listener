@@ -9,8 +9,8 @@ while len(key) % 16 !=0:
 	key = key + '@'
 key.encode()
 
-encry = AES.new(key, AES.MODE_CBC, 'This is an IV456')
-decry = AES.new(key, AES.MODE_CBC, 'This is an IV456')
+encry = AES.new(key, AES.MODE_CBC, b'This is an IV456')
+decry = AES.new(key, AES.MODE_CBC, b'This is an IV456')
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 IP = input('IP: ')

@@ -29,8 +29,8 @@ def uninstall():
 #round up key to 16 block
 while len(key) % 16 !=0:
 	key = key + '@'
-encry = AES.new(key, AES.MODE_CBC, 'This is an IV456')
-decry = AES.new(key, AES.MODE_CBC, 'This is an IV456')
+encry = AES.new(key, AES.MODE_CBC, b'This is an IV456')
+decry = AES.new(key, AES.MODE_CBC, b'This is an IV456')
 
 HOST = '' #All interfaces
 PORT = 1337
