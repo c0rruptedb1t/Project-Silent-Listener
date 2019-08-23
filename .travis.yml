@@ -7,6 +7,6 @@
     "pip install pycryptodome"
   ],
   "script": [
-    "python3 serverV4.5.py"
+    "python3 server.py test"
   ]
 }
