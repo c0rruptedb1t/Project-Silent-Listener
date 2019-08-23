@@ -7,7 +7,7 @@ import os
 import subprocess
 
 
-key = '@@@@@@@@@@@@@@@@' #AES key
+key = b'@@@@@@@@@@@@@@@@' #AES key
 
 def forwardmessage(outdata):
 	while len(outdata) % 16 !=0:

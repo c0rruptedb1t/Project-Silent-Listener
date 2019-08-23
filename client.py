@@ -7,6 +7,7 @@ MAXRECV = 100000
 key = input('Key: ')
 while len(key) % 16 !=0:
 	key = key + '@'
+key.encode()
 
 encry = AES.new(key, AES.MODE_CBC, 'This is an IV456')
 decry = AES.new(key, AES.MODE_CBC, 'This is an IV456')
